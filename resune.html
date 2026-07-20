@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ayan Shaikh</title>
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --accent-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        header p.title {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .skill-category h3 {
+            font-size: 1rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background-color: #eff6ff;
+            color: var(--primary-color);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #bfdbfe;
+        }
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+        .item-sub {
+            font-style: italic;
+            color: #4b5563;
+            margin-bottom: 8px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Ayan Shaikh</h1>
+        <p class="title">B.Tech Engineering Student | Web Developer</p>
+        <div class="contact-info">
+            <span>📧 ayan.shaikh@example.com</span> |
+            <span>📱 +91 98765 43210</span> |
+            <span>🌐 <a href="https://github.com" target="_blank">github.com/ayanshaikh</a></span> |
+            <span>💼 <a href="https://linkedin.com" target="_blank">linkedin.com/in/ayanshaikh</a></span> |
+            <span>📍 Mumbai, India</span>
+        </div>
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <p>Enthusiastic B.Tech student (2025–2029 Batch) at Shah & Anchor Kutchhi Engineering College (SAKEC) with hands-on experience in full-stack web development and software engineering fundamentals. Passionate about building interactive web applications, mastering new technologies, and solving real-world technical problems.</p>
+    </section>
+    <section>
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Bachelor of Technology (B.Tech)</span>
+                <span>2025 – 2029</span>
+            </div>
+            <div class="item-sub">Shah & Anchor Kutchhi Engineering College (SAKEC), Mumbai</div>
+            <ul>
+                <li><strong>Batch:</strong> 2025 – 2029</li>
+                <li><strong>Relevant Coursework:</strong> Computer Programming (C/C++), Data Structures, Database Systems, Web Development Fundamentals.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-tags">
+                    <span class="tag">C</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">React.js</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend & Databases</h3>
+                <div class="skill-tags">
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express.js</span>
+                    <span class="tag">REST APIs</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">MongoDB</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Platforms</h3>
+                <div class="skill-tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">GitHub Pages</span>
+                    <span class="tag">VS Code</span>
+                    <span class="tag">Postman</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Internship Experience</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Web Development Intern</span>
+                <span>Summer 2026</span>
+            </div>
+            <div class="item-sub">TechSolutions Pvt. Ltd. — Mumbai, India</div>
+            <ul>
+                <li>Assisted in designing responsive UI components using HTML5, CSS3, and JavaScript.</li>
+                <li>Collaborated on integrating RESTful APIs to display dynamic data on frontend interfaces.</li>
+                <li>Used Git and GitHub for version control and daily collaborative development.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Web-Based Portfolio Resume</span>
+                <span>2026</span>
+            </div>
+            <div class="item-sub">HTML5, CSS3, GitHub Pages</div>
+            <ul>
+                <li>Designed and deployed a responsive web resume hosted live on GitHub Pages.</li>
+                <li>Structured clean semantic markup and organized CSS for quick loading and mobile compatibility.</li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span>College Event Portal</span>
+                <span>2026</span>
+            </div>
+            <div class="item-sub">JavaScript, HTML/CSS, LocalStorage</div>
+            <ul>
+                <li>Created a web app for SAKEC students to view upcoming technical fest events and register online.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Certifications & Activities</h2>
+        <div class="item">
+            <ul>
+                <li><strong>Certification:</strong> Full Stack Web Development – Udemy / Coursera</li>
+                <li><strong>Member:</strong> SAKEC Student Technical & Coding Society</li>
+            </ul>
+        </div>
+    </section>
+</div>
+</body>
+</html>
